@@ -14,6 +14,16 @@ export default function Textform(props) {
         
     }
 
+    const handleLowCLlick = ()=>{
+
+        let lowtext = text.toLowerCase()
+
+        setText(lowtext)
+
+        console.log("low case clicked"
+        )
+    }
+
 const handleOnchange = (event)=> {
     setText(event.target.value);
     console.log("On change fired")
@@ -29,6 +39,8 @@ const handleOnchange = (event)=> {
   <textarea className="form-control" value= {text} onChange={handleOnchange} id="exampleFormControlTextarea1" rows="9" ></textarea>
 </div>
 <button className="btn btnprimary" onClick={handleUpclick}>Convert to Uppercase</button>
+   
+   <button className='btn 2ndary' onClick={handleLowCLlick}>Convert to Lowercase</button>
     </div>
   )
 }
