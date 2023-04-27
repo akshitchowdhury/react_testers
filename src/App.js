@@ -15,9 +15,9 @@ function App() {
 
 </Navbar>
 
-<div className="container my -3" >
+<div className="container my-3" >
 
-<Textform title = "Enter your typings below" placeholder = "Type to feel">
+<Textform title = "Enter your typings below" >
 
 </Textform>
 
