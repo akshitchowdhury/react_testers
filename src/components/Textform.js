@@ -34,13 +34,13 @@ const handleOnchange = (event)=> {
    
     
     <div>
-<div className="mb-3">
-<label htmlFor="exampleFormControlTextarea1" className="form-label"> {props.title}</label>
-  <textarea className="form-control" value= {text} onChange={handleOnchange} id="exampleFormControlTextarea1" rows="9" ></textarea>
+<div className="my-3">
+<label htmlFor="exampleFormControlTextarea1" className="form-label my-3" > {props.title}</label>
+  <textarea className="form-control my-3" value= {text} onChange={handleOnchange} id="exampleFormControlTextarea1" rows="9" ></textarea>
 </div>
-<button className="btn btnprimary" onClick={handleUpclick}>Convert to Uppercase</button>
+<button className="btn btnprimary mx-2" onClick={handleUpclick}>Convert to Uppercase</button>
    
-   <button className='btn 2ndary' onClick={handleLowCLlick}>Convert to Lowercase</button>
+   <button className='btn 2ndary mx-2' onClick={handleLowCLlick}>Convert to Lowercase</button>
     </div>
   )
 }
