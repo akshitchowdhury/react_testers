@@ -31,8 +31,7 @@ const handleOnchange = (event)=> {
 
     return (
     
-   
-    
+<>    
     <div>
 <div className="my-3">
 <label htmlFor="exampleFormControlTextarea1" className="form-label my-3" > {props.title}</label>
@@ -42,5 +41,24 @@ const handleOnchange = (event)=> {
    
    <button className='btn 2ndary mx-2' onClick={handleLowCLlick}>Convert to Lowercase</button>
     </div>
-  )
+
+    <div className="container my-3">
+
+    <h1>Your text Summary</h1>
+    
+    <p>
+    {text.length} number of characters written and {text.split(" ").length} number of words typed
+    </p>
+    <p>
+        Average words read in {text.split(" ").length*0.0042 }mins
+    </p>
+    <br/>
+    
+    <h3> Preview </h3>
+    <p>
+        {text}
+</p>
+    </div>
+    </>
+)
 }
